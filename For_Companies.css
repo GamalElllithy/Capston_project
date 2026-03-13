@@ -1,0 +1,75 @@
+body { font-family: "Segoe UI", Tahoma, sans-serif; }
+
+.company-nav {
+  background:#0b1c2d !important;
+}
+
+.companies-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* الفيديو يغطي الشاشة بالكامل */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* طبقة داكنة عشان الكلام يبان */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 28, 45, 0.7);
+  z-index: 2;
+}
+
+/* النص يطلع فوق الفيديو */
+.companies-hero .container {
+  z-index: 3;
+  color: white;
+}
+
+.problem-card, .step-card {
+  background:white;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.problem-card:hover, .step-card:hover {
+  transform: translateY(-8px);
+}
+
+.problem-card i, .step-card i {
+  font-size:40px;
+  color:#5b5fee;
+  margin-bottom:10px;
+}
+
+.stats-section {
+  background:#0b1c2d;
+  color:white;
+}
+
+.reveal {
+  opacity:0;
+  transform:translateY(40px);
+  transition:.8s;
+}
+
+.reveal.active {
+  opacity:1;
+  transform:translateY(0);
+}

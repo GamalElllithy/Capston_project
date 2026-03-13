@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillBridge | Login</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/login.css">
+</head>
+<body>
+
+<section class="login-wrapper">
+  <div class="container">
+
+    <!-- STEP 1 : اختيار النوع -->
+    <div id="step-choose" class="login-card active">
+      <h2>مرحبًا بك في SkillBridge</h2>
+      <p class="subtitle">اختر نوع الحساب للدخول</p>
+
+      <div class="row g-4 mt-4">
+        <div class="col-md-6">
+          <div class="choose-card" onclick="goToStudent()">
+            <i class="fas fa-user-graduate"></i>
+            <h3>طالب</h3>
+            <p>الوصول إلى Talent DNA وTalent Passport والفرص الذكية</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="choose-card" onclick="goToCompany()">
+            <i class="fas fa-building"></i>
+            <h3>شركة</h3>
+            <p>الوصول إلى Job DNA ولوحة التوظيف الذكية</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 2 : دخول الطالب -->
+    <div id="step-student" class="login-card">
+      <h2>تسجيل دخول الطالب</h2>
+
+      <form onsubmit="return fakeLogin(event, 'student')">
+        <input type="email" class="form-control mb-3" placeholder="البريد الإلكتروني" required>
+        <input type="password" class="form-control mb-3" placeholder="كلمة المرور" required>
+
+        <button class="btn btn-primary w-100 mb-3">تسجيل الدخول</button>
+
+        <div class="text-center">
+          <a href="#">نسيت كلمة المرور؟</a>
+          <p class="mt-2">
+            ليس لديك حساب؟ <a href="#">إنشاء حساب</a>
+          </p>
+        </div>
+      </form>
+
+      <button class="btn btn-outline-secondary mt-4" onclick="backToChoose()">← رجوع</button>
+    </div>
+
+    <!-- STEP 3 : دخول الشركة -->
+    <div id="step-company" class="login-card">
+      <h2>تسجيل دخول الشركة</h2>
+
+      <form onsubmit="return fakeLogin(event, 'company')">
+        <input type="email" class="form-control mb-3" placeholder="البريد الإلكتروني للشركة" required>
+        <input type="password" class="form-control mb-3" placeholder="كلمة المرور" required>
+        <input type="text" class="form-control mb-3" placeholder="رقم السجل التجاري (اختياري)">
+
+        <button class="btn btn-primary w-100 mb-3">تسجيل الدخول</button>
+
+        <div class="text-center">
+          <p>
+            ليس لديك حساب شركة؟ <a href="#">إنشاء حساب شركة</a>
+          </p>
+        </div>
+      </form>
+
+      <button class="btn btn-outline-secondary mt-4" onclick="backToChoose()">← رجوع</button>
+    </div>
+
+    <!-- رسالة النجاح -->
+    <div id="step-success" class="login-card">
+      <h2 id="success-title"></h2>
+      <p id="success-text"></p>
+
+      <a id="dashboard-link" href="#" class="btn btn-success btn-lg mt-3">
+        الانتقال إلى لوحة التحكم
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<script src="./JS/login.js"></script>
+</body>
+</html>

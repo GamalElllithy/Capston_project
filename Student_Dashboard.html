@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة الطالب | SkillBridge</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="./CSS/Student_Dashboard.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark">
+  <div class="container">
+    <a href="./index.html" class="btn navbar-brand fw-bold">SkillBridge</a>
+
+    <div>
+      <a href="Talent_DNA.html" class="btn btn-light btn-sm me-2">Talent DNA</a>
+      <a href="Talent_Passport.html" class="btn btn-light btn-sm me-2">Passport</a>
+      <a href="Job_Matching.html" class="btn btn-light btn-sm">Job Matching</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4 fade-in">
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card dashboard-card">
+<div class="card-body text-center">
+<i class="fa-solid fa-user-graduate icon"></i>
+<h5 class="mt-3">ملفك الشخصي</h5>
+<p>تابع بياناتك وتقدمك</p>
+<a href="Talent_Passport.html" class="btn btn-primary w-100">فتح الملف</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card dashboard-card">
+<div class="card-body text-center">
+<i class="fa-solid fa-dna icon"></i>
+<h5 class="mt-3">Talent DNA</h5>
+<p>اعرف مهاراتك واتجاهك</p>
+<a href="Talent_DNA.html" class="btn btn-success w-100">ابدأ الاختبار</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card dashboard-card">
+<div class="card-body text-center">
+<i class="fa-solid fa-briefcase icon"></i>
+<h5 class="mt-3">فرص التدريب</h5>
+<p>تطابق ذكي مع الشركات</p>
+<a href="Job_Matching.html" class="btn btn-dark w-100">ابحث عن تدريب</a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="mt-4">
+<div class="card progress-card">
+<div class="card-body">
+<h5>تقدمك الحالي</h5>
+<div class="progress">
+  <div id="student-progress" class="progress-bar" style="width:60%"></div>
+</div>
+<p class="mt-2">أنت في المرحلة: <strong>Talent DNA</strong></p>
+</div>
+</div>
+</div>
+
+</div>
+
+<script src="./JS/Student_Dashboard.js"></script>
+</body>
+</html>

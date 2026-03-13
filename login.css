@@ -1,0 +1,51 @@
+body {
+  background: linear-gradient(135deg, #0b1c2d, #1fb6a6);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.login-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 650px;
+  margin: auto;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  text-align: center;
+  display: none;
+}
+
+.login-card.active {
+  display: block;
+}
+
+.subtitle {
+  color: #555;
+}
+
+.choose-card {
+  background: #f9fafb;
+  padding: 30px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.choose-card i {
+  font-size: 48px;
+  color: #5b5fee;
+  margin-bottom: 10px;
+}
+
+.choose-card:hover {
+  transform: translateY(-6px);
+  background: #eef2ff;
+}

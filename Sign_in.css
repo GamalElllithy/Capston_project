@@ -1,0 +1,101 @@
+body{
+  background: linear-gradient(135deg,#0b1c2d,#1fb6a6);
+  font-family: "Segoe UI",sans-serif;
+}
+
+.wizard-box{
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  max-width:700px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+.gradient-text{
+  background: linear-gradient(90deg,#5b5fee,#1fb6a6);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+/* إخفاء وإظهار الخطوات */
+.step{ display:none; }
+.step.active{ display:block; }
+
+/* أزرار الاختيار */
+.account-btn{
+  width:100%;
+  padding:20px;
+  border:none;
+  border-radius:15px;
+  font-size:20px;
+  background:#f5f7fa;
+  transition:.3s;
+}
+
+.account-btn:hover{
+  transform:translateY(-6px) scale(1.03);
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.student:hover{ background:#eef1ff; }
+.company:hover{ background:#e8fff7; }
+
+/* رسائل الخطأ */
+.error{
+  color:red;
+  font-size:12px;
+}
+
+/* أنيميشن دخول */
+.fade-in{
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* Progress Bar */
+.progress{
+  height: 8px;
+  background:#e6e9ef;
+  border-radius: 10px;
+}
+
+.progress-bar{
+  width:20%;
+  height:100%;
+  background: linear-gradient(90deg,#5b5fee,#1fb6a6);
+  transition: .6s;
+}
+
+.progress-steps{
+  display:flex;
+  justify-content:space-between;
+  margin-top:10px;
+}
+
+.p-step{
+  font-size:12px;
+  color:#aaa;
+}
+
+.p-step.active{
+  color:#5b5fee;
+  font-weight:bold;
+}
+
+/* شبكة المهارات */
+.skills-grid{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:10px;
+}
+
+.skills-grid label{
+  background:#f5f7fa;
+  padding:10px;
+  border-radius:8px;
+  cursor:pointer;
+}

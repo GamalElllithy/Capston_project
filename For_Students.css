@@ -1,0 +1,222 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* HERO */
+.students-hero {
+  background: linear-gradient(135deg, #0b1c2d, #1fb6a6);
+    color: white;
+  padding: 120px 0;
+}
+
+.students-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.students-hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+/* JOURNEY CARDS */
+#journey{
+      background: linear-gradient(180deg, #1fb6a6, #e4d7d7);
+}
+.journey-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.journey-card i {
+  font-size: 40px;
+  color: #5b5fee;
+  margin-bottom: 15px;
+}
+
+.journey-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* VALUE SECTION */
+.value-section {
+  padding: 80px 0;
+  background: #f9fafb;
+}
+
+.value-section h2 {
+  font-size: 2.4rem;
+}
+
+/* STUDENT CARDS */
+.cards-section {
+  padding: 80px 0;
+}
+
+.student-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.student-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.student-card h3 {
+  padding: 15px;
+  margin: 0;
+}
+
+.student-card p {
+  padding: 0 15px 20px;
+}
+
+.student-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #5b5fee;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+  position: relative;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  background: #5b5fee;
+  border-radius: 50%;
+  position: absolute;
+  right: 49.2%;
+}
+
+.timeline-item .content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  width: 45%;
+}
+
+/* STATS */
+.stats-section {
+  padding: 80px 0;
+  background: #0b1c2d;
+  color: white;
+}
+
+.stat-box h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* CHART */
+.chart-section {
+  padding: 80px 0;
+}
+
+/* PARTNERS */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.partners-grid img {
+  width: 120px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.partners-grid img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+/* ===== تحسين التايم لاين ===== */
+.timeline-item {
+  transition: transform 0.4s ease;
+}
+
+.timeline-item:hover {
+  transform: scale(1.02);
+}
+
+/* ===== تحسين الكروت ===== */
+.student-card:hover {
+  transform: translateY(-12px) scale(1.01);
+}
+
+/* ===== تحسين اللوجوهات ===== */
+.partners-grid img {
+  opacity: 0.7;
+}
+
+.partners-grid img:hover {
+  opacity: 1;
+}
+
+.custom-navbar {
+  background: #0b1c2d !important;
+}
+
+.why-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+}
+
+.compare-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.compare-section li {
+  margin: 10px 0;
+}

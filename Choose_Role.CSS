@@ -1,0 +1,72 @@
+:root{
+  --main:#4f46e5;
+  --dark:#111827;
+  --light:#f3f4f6;
+}
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #ffffff);
+}
+
+.role-page{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+}
+
+.title{
+  font-weight:800;
+  color:var(--dark);
+}
+
+.subtitle{
+  color:#555;
+}
+
+.role-card{
+  background:white;
+  padding:40px 30px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  transition:.4s ease;
+  cursor:pointer;
+
+  /* animation start */
+  opacity:0;
+  animation:fadeUp .8s ease forwards;
+}
+
+.student-card{ animation-delay:.2s; }
+.company-card{ animation-delay:.4s; }
+
+.role-card:hover{
+  transform:translateY(-10px) scale(1.02);
+}
+
+.role-card .icon{
+  font-size:60px;
+  margin-bottom:15px;
+  color:var(--main);
+}
+
+.student-card{
+  border-top:6px solid var(--main);
+}
+
+.company-card{
+  border-top:6px solid #2563eb;
+}
+
+.back-link{
+  color:var(--main);
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* Simple animation */
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}

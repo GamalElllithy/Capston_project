@@ -1,0 +1,45 @@
+body{
+  background:#f2f5fa;
+  font-family: "Segoe UI",sans-serif;
+}
+
+.navbar{
+  background: linear-gradient(90deg,#5b5fee,#1fb6a6);
+}
+
+.dashboard-card{
+  border-radius:20px;
+  transition:.3s;
+}
+
+.dashboard-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.icon{
+  font-size:40px;
+  color:#5b5fee;
+}
+
+.progress-card{
+  border-radius:15px;
+}
+
+.progress{
+  height:8px;
+  border-radius:10px;
+}
+
+.progress-bar{
+  background:linear-gradient(90deg,#5b5fee,#1fb6a6);
+}
+
+.fade-in{
+  animation: fadeIn .7s ease-in-out;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(15px);}
+  to{opacity:1; transform:translateY(0);}
+}
